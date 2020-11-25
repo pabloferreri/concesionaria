@@ -15,4 +15,9 @@ let concesionaria = {
     autosParaLaVenta: function (){
         return autos.filter(auto => auto.vendido == false)
     }
+    autos0KM : function () {
+        let resultado = this.autosParaLaVenta()
+        
+        return resultado.filter(auto => auto.km < 100)
+    }
 }
