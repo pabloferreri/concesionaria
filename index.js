@@ -21,3 +21,19 @@ let concesionaria = {
         return resultado.filter(auto => auto.km < 100)
     }
 }
+
+/*console.log("Auto Vendido")*/
+
+concesionaria.venderAuto("APL123")
+
+console.log("AUTOS PARA LA VENTA----------------------------------------------------")
+
+console.log(concesionaria.autosParaLaVenta())
+
+console.log('AUTOS 0KM------------------------------------------------------------')
+
+console.log(concesionaria.autos0KM());
+
+console.log('AUTOS')
+
+console.log(autos);
