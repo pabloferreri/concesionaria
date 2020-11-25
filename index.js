@@ -11,5 +11,8 @@ let concesionaria = {
         if (resultado){
             autos[autos.indexOf(resultado)].vendido=true;
         }
+    },
+    autosParaLaVenta: function (){
+        return autos.filter(auto => auto.vendido == false)
     }
 }
