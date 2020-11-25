@@ -26,6 +26,10 @@ let concesionaria = {
             return autosVendidos.precio
         })
         return precioVendidos
+    },
+    totalDeVentas : function () {
+        let resultado = this.listaDeVentas();
+        return resultado.reduce((a, b) =>  a + b)
     }
 }
 
@@ -45,6 +49,10 @@ console.log(concesionaria.autos0KM());
 console.log("Lista de precio de los autos vendidos ----------------------------------")
 
 console.log(concesionaria.listaDeVentas())
+
+console.log("Total de ventas ----------------------------------")
+
+console.log(concesionaria.totalDeVentas())
 
 console.log('AUTOS')
 
