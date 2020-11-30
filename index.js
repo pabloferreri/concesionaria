@@ -29,7 +29,7 @@ let concesionaria = {
     },
     totalDeVentas : function () {
         let resultado = this.listaDeVentas();
-        return resultado.reduce((a, b) =>  a + b)
+        return resultado.reduce((a, b) =>  (a + b),0)
     }
 }
 
